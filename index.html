@@ -5,7 +5,41 @@
     <title>Banco Web</title>
 </head>
 <body>
-    <h1>Bienvenue sur Banco Web</h1>
-    <p>Version web en construction…</p>
+
+<div style="display:flex; align-items:center; gap:20px; padding:20px; background:#f5f5f5; border-bottom:1px solid #ccc;">
+
+    <!-- Logo Banco -->
+    <img src="https://loteries.lotoquebec.com/content/dam/lotoquebec/jeux/banco/banco-logo.png" 
+         alt="Banco" 
+         style="height:60px;">
+
+    <!-- Section Tirage -->
+    <div>
+        <label for="tirage">Tirage</label><br>
+        <select id="tirage" style="padding:5px; font-size:16px;">
+            <option value="">Sélectionne</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+        </select>
+    </div>
+
+    <!-- Section Turbo -->
+    <div>
+        <label for="turbo">Turbo</label><br>
+        <input id="turbo" type="text" style="padding:5px; font-size:16px; width:80px;">
+    </div>
+
+    <!-- Bouton -->
+    <button style="padding:10px 20px; font-size:16px; background:#007bff; color:white; border:none; border-radius:5px; cursor:pointer;">
+        Insertion des données
+    </button>
+</div>
+
+<!-- Dernier tirage -->
+<p style="padding:20px; font-size:18px;">
+    Dernier tirage enregistré : <strong>2026-05-29</strong>
+</p>
+
 </body>
 </html>
